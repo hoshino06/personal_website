@@ -9,13 +9,12 @@ site_dir: ../site/ja
 theme:
   name: null
   custom_dir: '../custom_theme'
+  highlightjs: true
+  hljs_style: github
+  hljs_languages:
+    - tex
   language: 'ja'
-  font:
-    text: 'Noto Sans JP'
-    # 'Noto Sans JP' 'Noto Serif JP'
-    # 'Sawarabi Gothic' 'Sawarabi Mincho'
-    # 'Kosugi' 'Kosugi Maru'
-    code: 'Ubuntu Mono'
+
 
 extra_css:
   - 'stylesheets/extra.css'

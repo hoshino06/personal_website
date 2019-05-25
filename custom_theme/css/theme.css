@@ -36,6 +36,7 @@ a {
 .body_payload {
     margin-top: 50px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .body_payload:after {
@@ -146,7 +147,7 @@ a {
 .Payload_Content {
     float: none;
     width: auto;
-    margin-left: 250px;
+    max-width: 700px;
 }
 .Payload_Content span {
     display: inline-block;
@@ -178,6 +179,9 @@ a {
     }
     .black-bg {
 	display: none;
+    }
+    .Payload_Content {
+	margin-left: 250px;
     }
 }
 
