@@ -1,0 +1,32 @@
+# Site information
+site_name: 'Hikaru Hoshino - University of Hyogo'
+site_author: 'Hikaru Hoshino'
+copyright: Copyright &copy; 2019 Hikaru Hoshino
+site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/en/
+site_dir: ../site/en
+
+# Configuration
+theme:
+  name: null
+  custom_dir: '../custom_theme'
+  language: 'en'
+
+
+# Navigation window
+nav:
+  - About: 'index.md'
+  - Publication: 'publications.md'
+  - Japanese: /faculty/hoshino/ja/
+
+extra:
+  social:
+    - type: 'database'
+      link: 'http://kyoin.u-hyogo.ac.jp/staff//eng/hoshino/'
+    - type: 'google'
+      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/hikaru-hoshino'
+
+extra_css:
+  - '../ja/stylesheets/extra.css'
+
