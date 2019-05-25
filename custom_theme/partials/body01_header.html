@@ -1,0 +1,47 @@
+<!-- <div class="body_header"> -->
+
+<div class="header_title">
+  <h1> {{ config.site_name }} </h1>
+</div>
+      
+
+<div class="black-bg" id="js-black-bg"></div>
+
+<div class="hamburger" id="js-hamburger">
+  <!-- メニューボタン(ハンバーガーメニュー) -->
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+</div>
+
+<script type="text/javascript">
+function toggleNav() {
+    var body = document.body;
+    var hamburger = document.getElementById('js-hamburger');
+    var blackBg = document.getElementById('js-black-bg');
+    hamburger.addEventListener(
+	'click',
+	function() { body.classList.toggle('nav-open');}
+    );
+    blackBg.addEventListener('click', function() {
+	body.classList.remove('nav-open');
+    });
+}
+toggleNav();
+</script>
+
+
+<!-- <div role="search" class="search"> -->
+<!--   <\!-- -->
+<!--       Create a search form that sends the user to the search.html file - this is -->
+<!--       the other file in the template which adds search to the theme. The only -->
+<!--       requirement here is that there is a text input with the name 'q' and the -->
+<!--       action and methods match below. -->
+<!--     -\-> -->
+<!--   <form action="{{ "search.html"|url }}" method="get"> -->
+<!--     <input type="search" name="q" placeholder="Search docs" /> -->
+<!--   </form> -->
+<!-- </div> -->
+
+
+<!-- </div> -->

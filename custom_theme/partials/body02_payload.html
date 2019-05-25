@@ -1,0 +1,23 @@
+<!-- 
+<div class="payload">
+-->
+
+<div class="Payload_NavigationFrame">
+  <nav class="Navigation">
+    <ul>
+      {% for nav_item in nav %}
+      {% include "nav.html" %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+<div class="Payload_Content">
+  {% block content %}
+  {{ page.content }}
+  {% endblock %}
+</div>
+
+<!-- 
+<div>
+-->

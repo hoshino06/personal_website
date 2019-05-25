@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 
+ * ============================================
+ * bodyの構成要素の設定
+ * ============================================
+ */
+
+.body_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2.4rem;
+    color: #fff;
+    /* background-color: rgba(0,0,0,.8); */
+    /* background-color:  #00bfa5; */
+    background-color: #00bcd4;
+    padding-left: 20px;
+    padding-top: 0px;
+    box-shadow: 0 0 .2rem rgba(0,0,0,.1),0 .2rem .4rem rgba(0,0,0,.2);
+}
+
+.body_header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.body_payload {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.body_payload:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.body_footer {
+    color: #fff;
+    background-color: rgba(0,0,0,.8);
+    padding-left: 20px;
+}
+
+/* 
+ * ============================================
+ * bodyの"header"内の要素
+ * ============================================
+ */
+
+.header_title {
+    float: left;
+    width: auto;
+    height: 100%;
+    line-height: 2.4rem;
+    margin-right: 70px;
+    overflow: hidden;
+}
+.header_title h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.search {
+    float: right;
+    width:auto;
+}
+
+.hamburger {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.hamburger__line {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .6s;
+}
+.hamburger__line--1 {
+  top: 14px;  
+}
+.hamburger__line--2 {
+  top: 20px;
+}
+.hamburger__line--3 {
+  top: 26px;
+}
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #eeeeee;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+/* 
+ * ============================================
+ * bodyの"footer"内の要素
+ * ============================================
+ */
+
+.footer_copyright {
+    padding: .4rem 0;
+    font-size: .8rem;
+    color: hsla(0,0%,100%,.3);;
+}
+
+.footer__highlight {
+   color: hsla(0,0%,100%,.7);;
+}
+.footer_copyright a {
+    color: hsla(0,0%,100%,.7);;
+}
+.footer_copyright a:hover {
+    color: #fff;
+}
+    
+/* 
+ * ============================================
+ * bodyの"payload"内の要素
+ * (payload_content, payload_navigation_frame)
+ * ============================================
+ */
+.Payload_Content {
+    float: none;
+    width: auto;
+    margin-left: 250px;
+}
+.Payload_Content span {
+    display: inline-block;
+}
+.Payload_Content h2 {
+    padding-left: 10px;
+    border-left: solid 10px #00bcd4;
+}
+.Payload_Content a {
+    color: #00bcd4;
+}
+.Payload_Content a:hover {
+    color: #00bfa5;
+}
+
+
+.Payload_NavigationFrame {
+    width: 230px;
+    height: 100%;
+}
+
+/* ### 768px以上　### */
+@media (min-width: 768px) {
+    .Payload_NavigationFrame {
+	float: left;
+    }
+    .hamburger {
+	display: none;
+    }
+    .black-bg {
+	display: none;
+    }
+}
+
+/* ### 767px以下　### */
+@media (max-width: 767px) {
+    .Payload_NavigationFrame {
+	position: fixed;
+	top: 39px;
+	right: -300px; /* これで隠れる */
+	transition: all .6s;
+    }
+    .nav-open .Payload_NavigationFrame {
+	right: 0px; /* これで出てくる */
+    }
+    .Payload_Content {
+	margin-left: 0;
+    }
+}
+
+
+/* 
+ * ============================================
+ * ナビゲーションメニューの設定 
+ * ============================================
+ */
+.Navigation {
+    margin: 0;
+    padding: 0;
+    border: solid 5px #dddddd;
+    background-color: #ffffff;
+}
+.Navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.Navigation h1 {
+    margin: 0px;
+    padding: 5px;
+    border-top: solid 3px #dddddd;
+    font-size: 1rem;
+}
+.Navigation li a {
+    display: block;
+    padding: 3px;
+    padding-left: 5px;
+    color: #000;
+    border-top: solid 1px #dddddd;
+}
+.Navigation li a:hover {
+    color: #00bfa5;
+    background-color: #eee;
+}
+.Navigation li .active a {
+    color: #00bfa5;
+}
+
+
+/* トグルメニューが押された時の設定*/
+
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+

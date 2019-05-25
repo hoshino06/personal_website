@@ -1,0 +1,51 @@
+# Site information
+site_name: '星野 光 - 兵庫県立大学 電気物性工学専攻'
+site_author: 'Hikaru Hoshino'
+copyright: Copyright &copy; 2019 Hikaru Hoshino
+site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/ja/
+site_dir: ../site/ja
+
+# Configuration
+theme:
+  name: null
+  custom_dir: '../custom_theme'
+  language: 'ja'
+  font:
+    text: 'Noto Sans JP'
+    # 'Noto Sans JP' 'Noto Serif JP'
+    # 'Sawarabi Gothic' 'Sawarabi Mincho'
+    # 'Kosugi' 'Kosugi Maru'
+    code: 'Ubuntu Mono'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+
+# Navigation Tree
+nav:
+  - Hikaru Hoshino:
+    - Home: 'index.md'
+    - 研究配属を考える皆さんへ: 'laboratory.md'
+    - 予定表: 'schedule.md'
+  - Research: 
+    - 研究テーマ: 'research.md'
+    - 研究成果リスト: 'publications.md'
+  - 研究室内向け:
+    - LaTeX関連:    './in_lab/tex_how_to.md'
+    - Python関連: './in_lab/python.md' 
+    - 電力市場の基礎: './in_lab/electricity_market.md'
+  - Language:
+    - English: /faculty/hoshino/en/
+
+
+
+# Socail links in footer
+extra:
+  social:
+    - type: 'database'
+      link: 'http://kyoin.u-hyogo.ac.jp/staff//eng/hoshino/'
+    - type: 'google'
+      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/hikaru-hoshino'
+
