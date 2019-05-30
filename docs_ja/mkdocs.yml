@@ -5,7 +5,8 @@ copyright: Copyright &copy; 2019 Hikaru Hoshino
 site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/ja/
 site_dir: ../site/ja
 
-# Configuration
+# Configurations
+
 theme:
   name: null
   custom_dir: '../custom_theme'
@@ -15,9 +16,17 @@ theme:
     - tex
   language: 'ja'
 
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes
+  - pymdownx.arithmatex
 
 extra_css:
   - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
 
 
 # Navigation Tree
@@ -27,7 +36,8 @@ nav:
     - 研究配属を考える皆さんへ: 'laboratory.md'
     - 予定表: 'schedule.md'
   - Research: 
-    - 研究テーマ: 'research.md'
+    #- 研究テーマ: 'research.md'
+    - 研究テーマ (工学部のページ): http://www.eng.u-hyogo.ac.jp/outline/faculty/hoshino/index.html
     - 研究成果リスト: 'publications.md'
   - 研究室内向け:
     - LaTeX関連:    './in_lab/tex_how_to.md'
