@@ -1,3 +1,5 @@
+toc: True
+
 # LaTeX関連
 
 このページでは, 本研究室に配属された学生を対象に, 文書作成ソフト[LaTeX](https://www.latex-project.org/)の使い方について説明します.

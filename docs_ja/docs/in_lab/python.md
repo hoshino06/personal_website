@@ -1,3 +1,5 @@
+toc: True
+
 # Python関連
 
 このページでは, 本研究室に配属された学生を対象に, [python](https://www.python.org/)の使い方について説明します.
