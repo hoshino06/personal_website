@@ -9,24 +9,22 @@ a {
 
 /* 
  * ============================================
- * bodyの構成要素の設定
+ * bodyの3つの構成要素(header, payload, footer)の設定
  * ============================================
  */
 
 .body_header {
-    position: fixed;
+    position: sticky;
     top: 0;
+    z-index: 999;
     width: 100%;
     height: 2.4rem;
     color: #fff;
-    /* background-color: rgba(0,0,0,.8); */
-    /* background-color:  #00bfa5; */
     background-color: #00bcd4;
     padding-left: 20px;
     padding-top: 0px;
     box-shadow: 0 0 .2rem rgba(0,0,0,.1),0 .2rem .4rem rgba(0,0,0,.2);
 }
-
 .body_header:after {
     content: "";
     display: block;
@@ -34,11 +32,10 @@ a {
 }
 
 .body_payload {
-    margin-top: 50px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .body_payload:after {
     content: "";
     display: block;
@@ -166,6 +163,7 @@ a {
 .Payload_NavigationFrame {
     width: 230px;
     height: 100%;
+    z-index: 1000;
 }
 
 .Payload_Toc {
