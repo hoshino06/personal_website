@@ -1,0 +1,20 @@
+<!-- 
+<div class="Payload_Toc">
+-->
+<nav class="TableOfContents">
+  <h1> 目次 </h1>
+  <ul class="nav flex-column bs-sidenav">
+    {%- for toc_item in page.toc %}
+    <li class="nav-item main"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+      {%- for toc_item in toc_item.children %}
+    <li class="nav-item">
+      <a href="{{ toc_item.url }}" class="nav-link{% if toc_item.active %} active{% endif %}">{{ toc_item.title }}</a>
+    </li>
+    {%- endfor %}
+    {%- endfor %}
+  </ul>
+</nav>
+
+<!-- 
+<div>
+-->

@@ -1,10 +1,3 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   {% include "partials/head.html" %}
@@ -15,14 +8,36 @@
   <div class="body_header">
     {% include "partials/body01_header.html" %}
   </div>
-
+  
+  {% block payload %}
   <div class="body_payload">
-    {% include "partials/body02_payload.html" %}
+    
+    {% block navigation %}
+    <div class="Payload_NavigationFrame">
+      {% include "partials/body02_payload01_navigation.html" %}
+    </div>
+    {% endblock %}
+    
+    {% block content %}
+    <div class="Payload_Content">
+      {{ page.content }}
+    </div>
+    {% endblock %}
+    
+    {% block toc %}    
+    {% if page.meta.toc == "True" %}
+    <div class="Payload_Toc">
+      {% include "partials/body02_payload03_toc.html" %}
+    </div>
+    {% endif %}
+    {% endblock %}
+    
   </div>
+  {% endblock %}
   
   <div class="body_footer">  
     {% include "partials/body03_footer.html" %}
   </div>
-
+  
 </body>
 </html>
