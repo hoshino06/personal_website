@@ -173,7 +173,14 @@ a {
 }
 
 
-/* ### 768px以上　### */
+/* ### 1130px以下　### */
+@media (max-width: 1130px) {
+    .Payload_Toc {
+	display: none;
+    }
+}
+
+/* ### 1005px以上　### */
 @media (min-width: 1005px) {
     .Payload_NavigationFrame {
 	float: left;
@@ -186,17 +193,11 @@ a {
     }
     .Payload_Content {
 	padding-left: 20px;
+	min-width: 700px;
    }
 }
 
-/* ### 1200px以下　### */
-@media (max-width: 1130px) {
-    .Payload_Toc {
-	display: none;
-    }
-}
-
-/* ### 990px以下　### */
+/* ### 1005px以下　### */
 @media (max-width: 1005px) {
     .Payload_NavigationFrame {
 	position: fixed;
@@ -208,6 +209,7 @@ a {
 	right: 0px; /* これで出てくる */
     }
     .Payload_Content {
+	width: 100%;
 	padding-left: 0;
     }
 }

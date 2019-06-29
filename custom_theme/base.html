@@ -4,14 +4,15 @@
 </head>
 
 <body>
-  
+
+  {% block header %}
   <div class="body_header">
     {% include "partials/body01_header.html" %}
   </div>
+  {% endblock %}
   
   {% block payload %}
   <div class="body_payload">
-    
     {% block navigation %}
     <div class="Payload_NavigationFrame">
       {% include "partials/body02_payload01_navigation.html" %}
@@ -30,14 +31,15 @@
       {% include "partials/body02_payload03_toc.html" %}
     </div>
     {% endif %}
-    {% endblock %}
-    
+    {% endblock %}    
   </div>
   {% endblock %}
   
+  {% block footer %}
   <div class="body_footer">  
     {% include "partials/body03_footer.html" %}
   </div>
+  {% endblock %}
   
 </body>
 </html>
