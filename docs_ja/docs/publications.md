@@ -4,15 +4,23 @@ toc: True
 
 ## 学術論文誌
 
-* **H. Hoshino**, Y. Susuki, T. Jonh Koo, and T. Hikiahra, Structural Analysis and Control of a Model of Two-site Electricity and Heat Supply, Journal of Dynamic Systems, Measurement, and Control, 141(10), 101004 (2019).
+* **H. Hoshino**, Y. Susuki, T. Jonh Koo, and T. Hikihara,
+Structural analysis and control of a model of two-site electricity and heat supply,
+Journal of Dynamic Systems, Measurement, and Control, 141(10), 101004 (2019).
 [[ASME](https://doi.org/10.1115/1.4043703)]
 [[arXiv](https://arxiv.org/abs/1809.03939)]
 
-* **星野光**, 薄良彦, T. John Koo, 引原隆士, 2 サイト地域エネルギーシステムにおけるコージェネレーションユニットの非線形制御 ―電気およびガスフローの同時調整，システム制御情報学会論文誌, 30(5), 157-166 (2017).
+* **星野光**, 薄良彦, T. John Koo, 引原隆士,
+2サイト地域エネルギーシステムにおけるコージェネレーションユニットの非線形制御―電気およびガスフローの同時調整，
+システム制御情報学会論文誌, 30(5), 157-166 (2017).
 [[J-STAGE](https://doi.org/10.5687/iscie.30.157)]
 
-* **H. Hoshino**, Y. Susuki, and T. Hikiahra, A Lumped-Parameter Model of Multiscale Dynamics in Steam Supply Systems, Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
+* **H. Hoshino**, Y. Susuki, and T. Hikihara,
+A lumped-parameter model of multiscale dynamics in steam supply systems,
+Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 [[ASME](https://doi.org/10.1115/1.4034491)]
+[[arXiv](https://arxiv.org/abs/1906.08135)]
+
 
 * **星野光**, 薄良彦, 引原隆士, 2サイト地域電熱供給システムの安定性 ―熱融通指令値のステップ状変化に対する数値的検討，システム制御情報学会論文誌，27(11), 452-460 (2014).
 [[J-STAGE](https://doi.org/10.5687/iscie.27.452)]
