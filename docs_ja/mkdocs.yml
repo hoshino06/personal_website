@@ -30,14 +30,6 @@ nav:
 # =============================
 # Socail links in footer
 # =============================
-extra:
-  social:
-    - type: 'database'
-      link: 'http://kyoin.u-hyogo.ac.jp/staff//eng/hoshino/'
-    - type: 'google'
-      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
-    - type: 'linkedin'
-      link: 'https://linkedin.com/in/hikaru-hoshino'
 
 
 # ==================
@@ -56,6 +48,21 @@ theme:
 plugins:
     - search
 
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
+
+extra:
+  social:
+    - icon: 'google'
+      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
+    - icon: 'github'
+      link: 'https://github.com/hoshino06'
+    - icon: 'linkedin'
+      link: 'https://linkedin.com/in/hikaru-hoshino'
+
 
 # ===============================
 # Extensions for Python Markdown
@@ -67,10 +74,4 @@ markdown_extensions:
   - footnotes
   - def_list
   - pymdownx.arithmatex
-
-extra_css:
-  - 'stylesheets/extra.css'
-
-extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
 

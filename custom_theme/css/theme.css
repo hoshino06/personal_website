@@ -118,22 +118,23 @@ a {
  * bodyの"footer"内の要素
  * ============================================
  */
+.body_footer a {
+    color: hsla(0,0%,100%,.7);
+}
+.body_footer a:hover {
+    color: #fff;
+}
 
 .footer_copyright {
     padding: .4rem 0;
     font-size: .8rem;
     color: hsla(0,0%,100%,.3);;
 }
-
 .footer__highlight {
    color: hsla(0,0%,100%,.7);;
 }
-.footer_copyright a {
-    color: hsla(0,0%,100%,.7);;
-}
-.footer_copyright a:hover {
-    color: #fff;
-}
+
+
 
 /* 
  * ============================================

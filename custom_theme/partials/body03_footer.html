@@ -1,5 +1,5 @@
 <!-- 
-<div class="footer"> 
+<div class="body_footer"> 
 -->
 
 <div class="footer_copyright">
@@ -10,8 +10,20 @@
   {% endif %}
   Built with
   <a href="https://www.mkdocs.org">MkDocs</a>
-  using a custom theme.
+  using a custom theme inspired by
+  <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.
 </div>
+
+
+{% if config.extra.social %}
+  <div class="footer_social">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    {% for social in config.extra.social %}
+      <a href="{{ social.link }}"> <i class="fab fa-{{ social.icon }}"> </i> </a>
+    {% endfor %}
+  </div>
+{% endif %}
+
 
 <!--
   MkDocs version      : {{ mkdocs_version }}
