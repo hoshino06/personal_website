@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 a {
@@ -43,6 +45,9 @@ a {
 }
 
 .body_footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
     color: #fff;
     background-color: rgba(0,0,0,.8);
     padding-left: 20px;
