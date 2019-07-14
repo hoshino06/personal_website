@@ -1,0 +1,31 @@
+div.profile {
+    height: auto;
+    width: auto;
+    overflow:hidden;
+}
+
+.profile:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+    
+div.profile_img {
+    float: left;
+    margin-left: 0.5rem;
+    height: 6rem; 
+}
+
+img.profile_img {
+    width: 4rem;
+}
+
+div.affiliation {
+    height: 6rem; 
+    margin-left: 6rem;
+}
+
+.affiliation p {
+    margin: 0em;
+    font-size: 1rem
+}

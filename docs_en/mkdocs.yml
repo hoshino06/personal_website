@@ -1,32 +1,40 @@
+# ===================
 # Site information
+# ===================
 site_name: 'Hikaru Hoshino - University of Hyogo'
 site_author: 'Hikaru Hoshino'
 copyright: Copyright &copy; 2019 Hikaru Hoshino
 site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/en/
-site_dir: ../site/en
 
+# =====================
+# Navigation tree
+# =====================
+nav:
+  - Home: 'index.md'
+  - Publication: 'publications.md'
+  - Japanese version: /faculty/hoshino/ja/
+
+# ==================
 # Configuration
+# ==================
+site_dir: ../site/en
 theme:
   name: null
   custom_dir: '../custom_theme'
   language: 'en'
+  
+extra_css:
+  - 'stylesheets/extra.css'
 
-
-# Navigation window
-nav:
-  - About: 'index.md'
-  - Publication: 'publications.md'
-  - Japanese: /faculty/hoshino/ja/
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
 
 extra:
   social:
-    - type: 'database'
-      link: 'http://kyoin.u-hyogo.ac.jp/staff//eng/hoshino/'
-    - type: 'google'
+    - icon: 'google'
       link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
-    - type: 'linkedin'
+    - icon: 'github'
+      link: 'https://github.com/hoshino06'
+    - icon: 'linkedin'
       link: 'https://linkedin.com/in/hikaru-hoshino'
-
-extra_css:
-  - '../ja/stylesheets/extra.css'
 
