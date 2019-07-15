@@ -25,7 +25,7 @@ nav:
     - Python関連: './in_lab/python.md' 
     - 電力市場の基礎: './in_lab/electricity_market.md'
   - Language:
-    - English: /faculty/hoshino/en/
+    - English version: /faculty/hoshino/en/
 
 # =============================
 # Socail links in footer
@@ -63,6 +63,7 @@ extra:
     - icon: 'linkedin'
       link: 'https://linkedin.com/in/hikaru-hoshino'
 
+google_analytics: ['UA-143840570-1', 'http://www.eng.u-hyogo.ac.jp']
 
 # ===============================
 # Extensions for Python Markdown
