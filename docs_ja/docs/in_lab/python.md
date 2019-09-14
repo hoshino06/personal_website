@@ -5,21 +5,12 @@ toc: True
 このページでは, 本研究室に配属された学生を対象に, [python](https://www.python.org/)の使い方について説明します.
 研究室内で備忘録として活用することを想定しており, 書かれている内容には偏りがあるとともに, 表現が必ずしも正確でない可能性があることに注意してください. 
 
-以下では, Pythonの[インストール方法](#install)やコーディングをする際のヒントおよび注意点について述べます. 
+以下では, Pythonのインストール方法やコーディングをする際のヒントおよび注意点について述べます. 
 Pythonの詳しい使い方については[公式ドキュメント](https://docs.python.org/ja/3/)を参照するのが良いと思います.
 公式ドキュメントの活用方法がわからないという場合には教員or先輩などに相談してください. 
 
-## なぜPythonをお勧めするか
 
-キーワードは可読性です. (詳細は準備中です)
-
-Pythonのコードが読みやすい一つの要因は, そのオブジェクト指向機能にあります. 
-皆さんが授業で習ったC言語では, 関数を定義してプログラムを組み立てて行きますが,
-Pythonではたくさんの種類の"オブジェクト"を使ってプログラムを組み立てます. 
-いきなりオブジェクト指向と言われてもよくわからないと思います.
-まずは[実際の例](#example)に触れつつ体験してみてください. 
-
-## Install 
+## インストール
 
 [Anacondaディストリビューション](https://www.anaconda.com/distribution/)のインストールをお勧めします. 
 [リンク先](https://www.anaconda.com/distribution/#download-section)のダウンロード画面で, 適切なOSを選択し, "Python 3.x version"(xは最新版の数字)をダウンロードしてください .
@@ -27,23 +18,20 @@ Pythonではたくさんの種類の"オブジェクト"を使ってプログラ
 上記Anacondaは, 本家のPythonに種々の機能を追加したアプリケーションです.
 Pythonで数値計算やデータ処理をするためには, 以下で紹介するように追加のライブラリをインポートすることになりますが, Anacondaには[scipy](https://www.scipy.org/), [sympy](https://www.sympy.org), [Matplotlib](https://matplotlib.org/)などの重要なライブラリがあらかじめ含まれています. 一般的にAnacondaはデータサイエンスのためのプラットフォームと言われますが, 広く科学技術計算をするためのプラットフォームとして有能です. 
 
-## 基本的な使い方
-
 Anacondaをインストールすると[SPYDER](https://www.spyder-ide.org/)(Scientific Python Development Environment)という開発環境が利用できます.
 
-(詳細は準備中です)
 
+<!---
 ## 追加ライブラリのインストール
 
 基本的にはcondaを使って追加のライブラリをインストールします
 
 (詳細は準備中です)
+--->
 
-## よくある質問と回答
 
-準備中
+## 数値計算ライブラリの利用
 
-## Example
 
 ここでは例題として以下の最適化問題(線形計画問題)[^玉置,2005]を考えます. 
 [^玉置,2005]: 玉置 編, システム最適化 (オーム社, 2005).
@@ -147,6 +135,7 @@ print(f'x1 = {res.x[0]}, x2 = {res.x[1]}')
 さて, 下記がオブジェクトを利用したコード([sample_with_object.py](https://github.com/hoshino06/ui_for_scipy/blob/master/for_education/sample_with_object.py))の例です. 
 なお, ここで利用するオブジェクト(obj_linprog)の仕様は別のファイル([optimize_linprog_minimal.py](https://github.com/hoshino06/ui_for_scipy/blob/master/for_education/optimize_linprog_minimal.py))に記述し, それをモジュールとして読み込んでいます. 内容の説明はコードの下を見てください. 
 
+
 ```python
 """
 ------------------------
@@ -186,13 +175,66 @@ print(f'fmax = {-res.fun}')
 print(f'x1 = {res.x[0]}, x2 = {res.x[1]}')
 ```
 
-(コードの説明は準備中)
+
+## グラフの作成
+
+数値計算や実験などで得た結果をグラフにする場合には
+[Matplotlib](https://matplotlib.org/)というライブラリを使用するのが便利です. 
+以下にサンプルの図とコードを示すので参考にしてください. 
+
+![グラフ](sin_cos.png)
+
+```python
+# matplotlibのpyplotモジュールを読み込み
+import matplotlib.pyplot as plt
+
+# プロットするデータを準備
+import numpy as np
+time = np.arange(0.0, 4.0, 0.01)
+sin_t = np.sin(np.pi *time)
+sin_2t = np.sin(2 * np.pi * time)
+
+# pltを初期化します
+# (この例では不必要. 同じスクリプトで複数の図を作成する場合などに使用.)
+plt.clf()
+
+# データをプロット
+plt.plot(time, sin_t,  label='sin($\pi$t)',  zorder=2, ls='-',  lw=3, c='g')
+plt.plot(time, sin_2t, label='sin(2$\pi$t)', zorder=1, ls='--', lw=3, c='b')
+
+# x軸とy軸のラベルを設定
+plt.xlabel('Time / s', fontsize=18)
+plt.ylabel('Amplitude',fontsize=18)
+
+# x軸とy軸のプロット範囲を設定
+plt.xlim(0,4)
+plt.ylim(-1.5,2.0)
+
+# x軸とy軸の目盛りを設定を設定
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
+plt.tick_params(direction='inout', width=1, length=8)
+
+# グラフの周囲の余白をゼロに設定
+plt.margins(0)
+
+# 凡例の見た目を設定
+plt.legend(loc='upper right', bbox_to_anchor=(0.95,1.04), #凡例の位置
+           frameon=False, #凡例の囲みは不必要
+           fontsize=18, #凡例のフォントサイズ
+           ncol=1, labelspacing=0.2 #凡例の並び方
+           )
+
+# グラフを出力
+# (bbox_inches="tight"は出力した図の一部が切れないようにするため)
+plt.savefig('sin_cos.png', bbox_inches="tight")
+```
+
+上記のサンプルはMatplotlibの中でも[pyplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot)というモジュールを用いて作成しています. 
+Matplotlibでグラフを作る際には, pyplotに定義されたコマンドを利用する方法と, オブジェクト指向APIを活用する方法の2通りがあります.
+Web上ではこれら2つの方法が混在したコードが目立ちますが,
+通常はオブジェクト指向APIを使用する必要はありません.
+基本的にはpyplotのコマンドのみで対応するようにしてください. 
 
 
-## 信頼性の高いコードを書くには
-
-上で紹介したコード([optimize_linprog_minimal.py](https://github.com/hoshino06/ui_for_scipy/blob/master/for_education/optimize_linprog_minimal.py))は例題を解くプログラムが動作する上で最小限の要素のみを残し, それ以外の機能をそぎ落としたものになっています.
-
-
-
-(詳細は準備中)
+<br><br> <!--- 参考文献との間にすきまをあけるため --->
