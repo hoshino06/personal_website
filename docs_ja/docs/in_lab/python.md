@@ -184,57 +184,15 @@ print(f'x1 = {res.x[0]}, x2 = {res.x[1]}')
 
 ![グラフ](sin_cos.png)
 
-```python
-# matplotlibのpyplotモジュールを読み込み
-import matplotlib.pyplot as plt
+<script src="https://gist.github.com/hoshino06/b84ab78949a9ce164e1e81f28acff4ad.js"></script>
 
-# プロットするデータを準備
-import numpy as np
-time = np.arange(0.0, 4.0, 0.01)
-sin_t = np.sin(np.pi *time)
-sin_2t = np.sin(2 * np.pi * time)
-
-# pltを初期化します
-# (この例では不必要. 同じスクリプトで複数の図を作成する場合などに使用.)
-plt.clf()
-
-# データをプロット
-plt.plot(time, sin_t,  label='sin($\pi$t)',  zorder=2, ls='-',  lw=3, c='g')
-plt.plot(time, sin_2t, label='sin(2$\pi$t)', zorder=1, ls='--', lw=3, c='b')
-
-# x軸とy軸のラベルを設定
-plt.xlabel('Time / s', fontsize=18)
-plt.ylabel('Amplitude',fontsize=18)
-
-# x軸とy軸のプロット範囲を設定
-plt.xlim(0,4)
-plt.ylim(-1.5,2.0)
-
-# x軸とy軸の目盛りを設定を設定
-plt.xticks(fontsize=15)
-plt.yticks(fontsize=15)
-plt.tick_params(direction='inout', width=1, length=8)
-
-# グラフの周囲の余白をゼロに設定
-plt.margins(0)
-
-# 凡例の見た目を設定
-plt.legend(loc='upper right', bbox_to_anchor=(0.95,1.04), #凡例の位置
-           frameon=False, #凡例の囲みは不必要
-           fontsize=18, #凡例のフォントサイズ
-           ncol=1, labelspacing=0.2 #凡例の並び方
-           )
-
-# グラフを出力
-# (bbox_inches="tight"は出力した図の一部が切れないようにするため)
-plt.savefig('sin_cos.png', bbox_inches="tight")
-```
 
 上記のサンプルはMatplotlibの中でも[pyplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot)というモジュールを用いて作成しています. 
 Matplotlibでグラフを作る際には, pyplotに定義されたコマンドを利用する方法と, オブジェクト指向APIを活用する方法の2通りがあります.
 Web上ではこれら2つの方法が混在したコードが目立ちますが,
 通常はオブジェクト指向APIを使用する必要はありません.
 基本的にはpyplotのコマンドのみで対応するようにしてください. 
+
 
 
 <br><br> <!--- 参考文献との間にすきまをあけるため --->
