@@ -75,4 +75,5 @@ markdown_extensions:
   - footnotes
   - def_list
   - pymdownx.arithmatex
-
+  - tables
+  
