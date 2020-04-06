@@ -1,0 +1,86 @@
+###############################################
+# Site infromation
+###############################################
+# ===================
+# Basic information
+# ===================
+site_name: '星野 光 (Hikaru HOSHINO) - 兵庫県立大学'
+site_author: 'Hikaru Hoshino'
+copyright: Copyright &copy; 2020 Hikaru Hoshino
+site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/pc/
+
+# =======================
+# Navigation Tree
+# =======================
+nav:
+    - Home|ホーム: index.md
+    - LaTeX|文書作成:
+      - index: tex.md
+      - BibTeXによる文献リスト: tex_bibtex.md
+    - Python|パイソン:
+      - index: python.md
+      - グラフ作成: python_graph.md
+
+# =============================
+# Other Settings (custom styleによる追加情報)
+#
+# keywords: サイトキーワード(サイトメタ情報)
+# description: サイト紹介(サイトメタ情報)
+# =============================
+extra:
+  keywords: 星野光, 星野 光, Hikaru Hoshino
+  description: 星野 光 兵庫県立大学 助教
+  side_menu_btn:
+    - title: 研究関連情報はこちらへ|Hoshino's Webpage
+      link:  /faculty/hoshino/ja/
+  social:
+    - icon: 'google'
+      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
+    - icon: 'github'
+      link: 'https://github.com/hoshino06'
+    - icon: 'linkedin'
+      link: 'https://linkedin.com/in/hikaru-hoshino'
+
+
+##########################################
+# Configurations
+###########################################
+#---------------------------------
+# site_dir 生成したwebページの出力先
+#---------------------------------
+site_dir: ../site/pc
+
+#---------------------------------
+# theme: mkdocsのテーマ設定
+#---------------------------------
+theme:
+  name: null
+  custom_dir: '../custom_theme'
+  highlightjs: true
+  hljs_style: github
+  hljs_languages:
+    - tex
+  language: 'ja'
+
+plugins:
+    - search
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
+
+google_analytics: ['UA-143840570-1', 'http://www.eng.u-hyogo.ac.jp']
+
+# ===============================
+# Extensions for Python Markdown
+# https://python-markdown.github.io/extensions/
+#
+# attr_list: idやclassなどを追加可能({:id=xxx}や{:target=_blank}など)
+# ===============================
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - pymdownx.arithmatex
+  - tables
+  - attr_list
