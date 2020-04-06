@@ -1,28 +1,24 @@
-<!-- 
-<div class="body_footer"> 
--->
 
 <div class="footer_copyright">
   {% if config.copyright %}
   <div class="footer__highlight">
     {{ config.copyright }}
+    
+    {% if config.extra.social %}
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    {% for social in config.extra.social %}
+    <a href="{{ social.link }}"  target="_blank">
+      <i class="fab fa-{{ social.icon }}"> </i>
+    </a>
+    {% endfor %}
+    {% endif %}
+    
   </div>
   {% endif %}
   Built with
-  <a href="https://www.mkdocs.org">MkDocs</a>
-  using a custom theme inspired by
-  <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.
+  <a href="https://www.mkdocs.org" target="_blank">MkDocs</a> using 
+  design by <a href="http://tempnate.com/" target="_blank">tempnate</a>
 </div>
-
-
-{% if config.extra.social %}
-  <div class="footer_social">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    {% for social in config.extra.social %}
-      <a href="{{ social.link }}"> <i class="fab fa-{{ social.icon }}"> </i> </a>
-    {% endfor %}
-  </div>
-{% endif %}
 
 
 <!--
@@ -30,6 +26,3 @@
   Docs Build Date UTC : {{ build_date_utc }}
 -->
 
-<!-- 
-</div> 
--->

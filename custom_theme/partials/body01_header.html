@@ -1,46 +1,45 @@
-<!-- <div class="body_header"> -->
 
-<div class="header_title">
+<div id="header">
+
   <h1> {{ config.site_name }} </h1>
+  
+  <div id="header_inner">
+    <div id="h_logo">
+      <h2>
+	<a href="{{ site_url|url }}">
+	  <img src="{{ 'img/logo.png'|url }}" alt="{{ config.site_name }}">
+	</a>
+      </h2>
+    </div>
+    <div id="h_info">
+      <img src="{{ 'img/info.png'|url }}" alt=" ">
+    </div>
+  </div>
+  
 </div>
 
-<div class="black-bg" id="js-black-bg"></div>
 
-<div class="hamburger" id="js-hamburger">
-  <!-- メニューボタン(ハンバーガーメニュー) -->
-    <span class="hamburger__line hamburger__line--1"></span>
-    <span class="hamburger__line hamburger__line--2"></span>
-    <span class="hamburger__line hamburger__line--3"></span>
+<div id="header-menu">
+  <ul class="clearfix">
+    {% for menu_item in nav %}
+    <li {% if menu_item.title.split('|')[0] == "Home" %}class="home"{% endif %}>
+      {% if menu_item.children %}
+      <a href="{{ menu_item.children[0].url|url }}">
+      {% else %}
+      <a href="{{ menu_item.url|url }}">
+      {% endif %}
+	{{ menu_item.title.split('|')[0] }}
+	<br /><span class="sub">
+	  {{ menu_item.title.split('|')[1] }}
+	</span>
+      </a>
+    </li>
+    {% endfor %}
+   </ul>
 </div>
 
-<script type="text/javascript">
-function toggleNav() {
-    var body = document.body;
-    var hamburger = document.getElementById('js-hamburger');
-    var blackBg = document.getElementById('js-black-bg');
-    hamburger.addEventListener(
-	'click',
-	function() { body.classList.toggle('nav-open');}
-    );
-    blackBg.addEventListener('click', function() {
-	body.classList.remove('nav-open');
-    });
-}
-toggleNav();
-</script>
-
-
-<!-- <div role="search" class="search"> -->
-<!--   <\!-- -->
-<!--       Create a search form that sends the user to the search.html file - this is -->
-<!--       the other file in the template which adds search to the theme. The only -->
-<!--       requirement here is that there is a text input with the name 'q' and the -->
-<!--       action and methods match below. -->
-<!--     -\-> -->
-<!--   <form action="{{ "search.html"|url }}" method="get"> -->
-<!--     <input type="search" name="q" placeholder="Search docs" /> -->
-<!--   </form> -->
-<!-- </div> -->
-
-
-<!-- </div> -->
+<!-- メイン画像 ここから -->
+<div id="header-img">
+<img src="{{ 'img/head_img_slim.png'|url }}" alt=" &nbsp; " class="main_photo">
+</div>
+<!-- メイン画像 ここまで -->

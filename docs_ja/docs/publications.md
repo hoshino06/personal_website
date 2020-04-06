@@ -1,8 +1,11 @@
-toc: True
 
-# 研究成果リスト
+## 研究成果リスト {:class=page_title}
 
-## 学術論文誌
+[学術論文誌](#journal) | 
+[研究報告](#technical-paper) |  [国際会議録](#conference) |
+[国内学会発表](#2019-local-conference)
+
+### 論文誌(Journal)
 
 * H. Hoshino, Y. Susuki, T. J. Koo, and T. Hikihara,
 Structural analysis and control of a model of two-site electricity and heat supply,
@@ -26,7 +29,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 [[J-STAGE](https://doi.org/10.5687/iscie.27.452)]
 
 
-## 研究報告
+### 研究報告(Technical Paper)
 
 * 星野光, 岡田健司, 花井悠二, アイルランドにおけるノンファームアクセス―電力系統利用の権利を考慮した混雑管理の事例分析, 電力中央研究所報告, Y18002 (2019).
 [[電中研](https://criepi.denken.or.jp/jp/kenkikaku/report/detail/Y18002.html)]
@@ -37,7 +40,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 * 星野光, 古澤健, 岡田健司, 分散型エネルギー源の利活用を前提とした配電料金設計のためのモデル分析の動向と課題, 電力中央研究所社会経済研究所ディスカッションペーパー, SERC17002 (2018). [[社経研](https://criepi.denken.or.jp/jp/serc/discussion/2017.html)]
 
 
-## 国際会議録
+### 国際会議録(Conference)
 
 * H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami (submitted) 
 
@@ -53,7 +56,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 * Y. Susuki, H. Hoshino, T. Hikihara, and I. Mezic, Nonlinear instability of a network of fixed-speed induction generators, Proceedings of the 13th European Control Conference (ECC2014), pp.1313-1318, Strasbourg, France, June 24-27 (2014). [[IEEE](https://doi.org/10.1109/ECC.2014.6862396)]
 
-## 国内学会発表 (2019年度以降)
+### 国内学会発表 (2019年度以降) (Local Conference)
 
 共同研究者登壇分を含む．**太字**が発表者. 
 

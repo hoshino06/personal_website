@@ -4,43 +4,48 @@
 </head>
 
 <body>
-  
+
+<div id="main"> 
+
+  <!-- ヘッダー -->
   {% block header %}
-  <div class="body_header">
     {% include "partials/body01_header.html" %}
-  </div>
   {% endblock %}
   
-  {% block payload %}
-  <div class="body_payload">
-    {% block navigation %}
-    <div class="Payload_NavigationFrame">
-      {% include "partials/body02_payload01_navigation.html" %}
-    </div>
-    {% endblock %}
-    
-    {% block content %}
-    <div class="Payload_Content">
+  <div id="container">
+  {% block container %}
+  
+    <!-- メインコンテンツ -->
+    <div id="contents">
+      {% block content %}
       {{ page.content }}
+      {% endblock %}
+      <hr class="line">
+      <p class="back"><a href="#header">
+	  <img class="scroll" src="{{ 'img/pagetop.png'|url }}" alt="Back to Top">
+      </a></p>
+      <br>    
     </div>
-    {% endblock %}
     
-    {% block toc %}    
-    {% if page.meta.toc == "True" %}
-    <div class="Payload_Toc">
-      {% include "partials/body02_payload03_toc.html" %}
+    <!-- サイドエリア -->    
+    <div id="menu">
+      {% block navigation %}
+      {% include "partials/body02_navigation.html" %}
+      {% endblock %}
     </div>
-    {% endif %}
-    {% endblock %}    
+
+    {% endblock %}
+
   </div>
-  {% endblock %}
   
+  <!-- フッター -->
   {% block footer %}
-  <div class="body_footer">  
+  <div id="footer">
     {% include "partials/body03_footer.html" %}
   </div>
   {% endblock %}
-
-
+  
+</div>
+  
 </body>
 </html>

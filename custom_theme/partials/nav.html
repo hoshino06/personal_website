@@ -1,20 +1,23 @@
-<!--
-
--->
+<!-- navが単層の(入れ子になっていない)場合 -->
 {% if not nav_item.children %}
 <li {% if nav_item.active %}class="active"{% endif %}>
   <a href="{{ nav_item.url|url }}">
-    {{ nav_item.title }}
+    {{ nav_item.title.split("|")[0] }}
   </a>
 </li>
+<!-- navが入れ子になっている場合 -->
 {% else %}
 <li>
-  <h1>
-    {{ nav_item.title }}
-  </h1>
+  <h3>
+      {{ nav_item.title.split("|")[0] }}
+  </h3>
   <ul>
-    {% for nav_item in nav_item.children %}
-    {% include "partials/nav.html" %}
+    {% for nav_item in nav_item.children %}    
+    {% if nav_item.title == "index" %}
+       <li> <a href="{{ nav_item.url|url }}" > 概要 </a> </li>
+    {% else %}
+      {% include "partials/nav.html" %}	
+    {% endif %}
     {% endfor %}
   </ul>
 </li>

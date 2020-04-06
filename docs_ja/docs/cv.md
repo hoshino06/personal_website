@@ -1,12 +1,15 @@
-# 自己紹介
+## 自己紹介(CV) {:class=page_title}
 
-外部サイト: 
-[兵庫県立大学データベース](http://kyoin.u-hyogo.ac.jp/staff//eng/hikaruhoshino/),
-[Google Scholar](https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja),
-[researchmap](https://researchmap.jp/h-hoshino)
+### 研究者情報
+
+* 1989年12月生まれ
+* 研究者番号: 30836292
+* [Researchmap](https://researchmap.jp/h-hoshino){:target="_blank"}
+* [兵庫県立大学研究者データベース](http://kyoin.u-hyogo.ac.jp/staff//eng/hikaruhoshino/){:target="_blank"}
+* [Google Scholar](https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja){:target="_blank"}
 
 
-## 略歴
+### 略歴
 
 * 2008年3月 京都成章高等学校卒業
 * 2012年3月 京都大学工学部電気電子工学科卒業
@@ -16,8 +19,7 @@
 * 2018年8月 同 主任研究員
 * 2019年4月 兵庫県立大学大学院工学研究科電気物性工学専攻 助教
 
-
-## 受賞歴
+### 受賞歴
 
 * 平成26年度工学研究科長賞 高大連携事業【学びコーディネータ】による教育活動への貢献
 * システム制御情報学会 2015年度学会賞 論文賞
@@ -26,7 +28,7 @@
 * 第59回自動制御連合講演会優秀発表賞
 
 
-## その他
+### その他
 
 * 扱ったことのあるプログラミング言語:<br> C, Python, MATLAB/Simulink, Mathematica, シェルスクリプト, HTML/CSS
 

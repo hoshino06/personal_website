@@ -1,43 +1,64 @@
+###############################################
+# Site infromation
+###############################################
 # ===================
-# Site information
+# Basic information
 # ===================
-site_name: '星野 光 - 兵庫県立大学 電気物性工学専攻'
+site_name: '星野 光 (Hikaru HOSHINO) - 兵庫県立大学'
 site_author: 'Hikaru Hoshino'
-copyright: Copyright &copy; 2019 Hikaru Hoshino
+copyright: Copyright &copy; 2020 Hikaru Hoshino
 site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/ja/
-site_dir: ../site/ja
 
 # =======================
 # Navigation Tree
 # =======================
 nav:
-  - Hikaru Hoshino:
-    - Home: index.md
-    - 自己紹介: cv.md
-    - 研究配属を考える皆さんへ: laboratory.md
-    - 予定表: schedule.md
-  - Research: 
-    #- 研究テーマ: 'research.md'
-    - 研究テーマ (工学部のページ): http://www.eng.u-hyogo.ac.jp/outline/faculty/hoshino/index.html
-    - 研究成果リスト: 'publications.md'
-  - Others:
-    - LaTeX関連:    './in_lab/tex_how_to.md'
-    - Python関連: './in_lab/python.md' 
-    - 電力市場の基礎: './in_lab/electricity_market.md'
-  - Language:
-    - English version: /faculty/hoshino/en/
+    - Home|ホーム: index.md
+    - CV|自己紹介: cv.md
+    - Research|研究テーマ: http://www.eng.u-hyogo.ac.jp/outline/faculty/hoshino/index.html
+    - Publications|研究成果リスト: publications.md
+    - Education|教育活動: education.md
+    - Message|研究室配属: laboratory.md
 
 # =============================
-# Socail links in footer
+# Other Settings (custom styleによる追加情報)
+#
+# keywords: サイトキーワード(サイトメタ情報)
+# description: サイト紹介(サイトメタ情報)
 # =============================
+extra:
+  keywords: 星野光, 星野 光, Hikaru Hoshino
+  description: 星野 光 兵庫県立大学 助教
+  side_menu_btn:
+    - title: 研究室配属を考える方へ|message
+      link:  /faculty/hoshino/ja/laboratory
+    - title: 連絡先|contact
+      link:  /faculty/hoshino/ja/schedule
+  side_menu_under:
+    - title: 計算機関連<br>(Python,LaTeXなど)
+      link: /faculty/hoshino/pc/
+  social:
+    - icon: 'google'
+      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
+    - icon: 'github'
+      link: 'https://github.com/hoshino06'
+    - icon: 'linkedin'
+      link: 'https://linkedin.com/in/hikaru-hoshino'
 
 
-# ==================
+##########################################
 # Configurations
-# ==================
+###########################################
+#-------------------------------
+# site_dir 生成したサイトの出力先
+#-------------------------------
+site_dir: ../site/ja
+
+#-------------------------
+# mkdocsのテーマ設定
+#-------------------------
 theme:
   name: null
-#  name: material
   custom_dir: '../custom_theme'
   highlightjs: true
   hljs_style: github
@@ -48,32 +69,22 @@ theme:
 plugins:
     - search
 
-extra_css:
-  - 'stylesheets/extra.css'
-
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
 
-extra:
-  social:
-    - icon: 'google'
-      link: 'https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja'
-    - icon: 'github'
-      link: 'https://github.com/hoshino06'
-    - icon: 'linkedin'
-      link: 'https://linkedin.com/in/hikaru-hoshino'
-
 google_analytics: ['UA-143840570-1', 'http://www.eng.u-hyogo.ac.jp']
 
-# ===============================
+#----------------------------------------
 # Extensions for Python Markdown
-# https://python-markdown.github.io/extensions/
-# ===============================
+# https://python-markdown.github.io/extensions
+#
+# attr_list: idやclassなどを追加可能({:id=xxx}や{:target=_blank}など)
+#----------------------------------------
 markdown_extensions:
   - toc:
-      permalink: true
+      permalink: false
   - footnotes
   - def_list
   - pymdownx.arithmatex
   - tables
-  
+  - attr_list

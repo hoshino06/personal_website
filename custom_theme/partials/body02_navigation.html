@@ -1,0 +1,53 @@
+
+<!-- サイドメニューボタン -->
+{% for item in config.extra.side_menu_btn %}
+<div class="menu_btn">
+  <a href="{{ item.link }} ">
+    {{ item.title.split("|")[0] }} <br> {{ item.title.split("|")[1] }}
+  </a>
+</div>
+{% endfor %}
+
+<!-- サイドメニューリスト -->
+<div class="menulist">
+  <h3>Menu</h3>
+  <ul>
+    {% for nav_item in nav %}
+    {% include "partials/nav.html" %}
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- {% block toc %}     -->
+<!-- {% if page.meta.toc == "True" %} -->
+<!-- <div class="TableOfContents"> -->
+<!--   <h1> ToC </h1> -->
+<!--   <ul class="nav flex-column bs-sidenav"> -->
+<!--     {%- for toc_item in page.toc %} -->
+<!--     <li class="nav-item main"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li> -->
+<!--     {%- for toc_item in toc_item.children %} -->
+<!--     <li class="nav-item"> -->
+<!--       <a href="{{ toc_item.url }}" class="nav-link{% if toc_item.active %} active{% endif %}">{{ toc_item.title }}</a> -->
+<!--     </li> -->
+<!--     {%- endfor %} -->
+<!--     {%- endfor %} -->
+<!--   </ul> -->
+<!-- </div> -->
+<!-- {% endif %} -->
+<!-- {% endblock %} -->
+
+
+<!-- サイドメニューボタン(下) -->
+{% for item in config.extra.side_menu_under %}
+<div class="menu_btn_under">
+  <a href="{{ item.link }} ">
+    {{ item.title.split("|")[0] }} <br> {{ item.title.split("|")[1] }}
+  </a>
+</div>
+{% endfor %}
+
+<!-- PC向け・非表示 -->
+<div class="menu_back">
+<p class="back"><a href="#header"><img class="scroll" src="img/pagetop.png" alt="Back to Top"></a></p>
+</div>
+<!-- 非表示ここまで -->
