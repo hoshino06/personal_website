@@ -13,12 +13,12 @@ site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/ja/
 # Navigation Tree
 # =======================
 nav:
-    - Home|ホーム: index.md
-    - CV|自己紹介: cv.md
-    - Research|研究テーマ: http://www.eng.u-hyogo.ac.jp/outline/faculty/hoshino/index.html
-    - Publications|研究成果リスト: publications.md
-    - Education|教育活動: education.md
-    - Message|研究室配属: laboratory.md
+    - ホーム|Home: index.md
+    - 自己紹介|CV: cv.md
+    - 研究テーマ|Research: http://www.eng.u-hyogo.ac.jp/outline/faculty/hoshino/index.html
+    - 研究成果リスト|Publications: publications.md
+    - 教育活動|Education: education.md
+    - 研究室配属|Message: laboratory.md
 
 # =============================
 # Other Settings (custom styleによる追加情報)
@@ -65,9 +65,15 @@ theme:
   hljs_languages:
     - tex
   language: 'ja'
-
+  
 plugins:
     - search
+
+#--------------------------
+# 外部のcss
+#--------------------------
+extra_css:
+  - 'stylesheets/extra.css'
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML'
@@ -79,12 +85,15 @@ google_analytics: ['UA-143840570-1', 'http://www.eng.u-hyogo.ac.jp']
 # https://python-markdown.github.io/extensions
 #
 # attr_list: idやclassなどを追加可能({:id=xxx}や{:target=_blank}など)
+# def_list:  dl,dtなどを設定する機能を追加
+# markdown.extenxions.extra:  md_in_htmlを使用するため
 #----------------------------------------
 markdown_extensions:
-  - toc:
-      permalink: false
   - footnotes
   - def_list
   - pymdownx.arithmatex
   - tables
   - attr_list
+  - admonition
+  - markdown.extensions.extra
+

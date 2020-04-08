@@ -1,31 +1,22 @@
-div.profile {
-    height: auto;
-    width: auto;
-    overflow:hidden;
+#news {
+    font-size: 14px;
+    height: 250px;
 }
 
-.profile:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-    
-div.profile_img {
-    float: left;
-    margin-left: 0.5rem;
-    height: 6rem; 
+#news > hr {
+    border: 1px dashed #CCCCCC;
 }
 
-img.profile_img {
-    width: 4rem;
+#thesis > th, td{
+    padding: 5px;
+    border: 1px solid;
 }
 
-div.affiliation {
-    height: 6rem; 
-    margin-left: 6rem;
+#thesis > th {
+    width: 50px;
 }
 
-.affiliation p {
-    margin: 0em;
-    font-size: 1rem
+#thesis > table {
+    border-collapse:  collapse;
+    width:  100%;  
 }
