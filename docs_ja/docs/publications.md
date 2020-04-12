@@ -42,7 +42,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 ### 国際会議録(Conference)
 
-* H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami (submitted) 
+* H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami, Physiological modeling of concentration-effect relationship for nondepolarzing neuromuscular blocking drugs, 2020 42nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) in conjunction with the 43rd Annual Conference of the Canadian Medical and Biological Engineering Society (accepted). 
 
 * Y. Susuki, T. Saito, H. Hoshino, T. Hikihara, Synthesis and real-time simulation of reactive controller for hot-water supply in a safety-critical hospital environment, Proceedings of the 2017 IEEE Conference on Control Technology and Applications (CCTA2017), pp.211- 216, Mauna Lani, HI, USA, August 27-30 (2017). [[IEEE](https://doi.org/10.1109/CCTA.2017.8062465)]
 
@@ -62,7 +62,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 * **H. Hoshino**, T. J. Koo, Y. C. Chu, Y. Susuki, A hierarchical controller design for two-site electricity and steam supply system participating in power system frequency regulation, 第64回システム制御情報学会研究発表講演会 (予定). 
 
-* 星野 光, **阪上 公紀**, 古谷 栄光, 送配電事業におけるデススパイラルの発生条件に関する一検討, 令和2年電気学会全国大会, 6-120, 東京電機大学東京千住キャンパス, 2020年3月13日(予定). 
+* 星野 光, **阪上 公紀**, 古谷 栄光, 送配電事業におけるデススパイラルの発生条件に関する一検討, 令和2年電気学会全国大会, 6-120, 東京電機大学東京千住キャンパス, 2020年3月13日. 
 
 * **星野 光**, 古谷 栄光, 澤登 慶治, 白神 豪太郎, 非脱分極性筋弛緩薬による神経筋刺激伝達応答変化の数理モデル化, 第26回日本静脈麻酔学会, 一般演題1-3, 昭和大学上條講堂, 2019年11月23日.
 
