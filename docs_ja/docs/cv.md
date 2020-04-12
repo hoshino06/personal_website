@@ -2,11 +2,11 @@
 
 ### 研究者情報
 
-* 1989年12月生まれ
-* 研究者番号: 30836292
-* [Researchmap](https://researchmap.jp/h-hoshino){:target="_blank"}
-* [兵庫県立大学研究者データベース](http://kyoin.u-hyogo.ac.jp/staff//eng/hikaruhoshino/){:target="_blank"}
-* [Google Scholar](https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja){:target="_blank"}
+* ![*](img/icon.gif) 1989年12月生まれ
+* ![*](img/icon.gif) 研究者番号: 30836292
+* ![*](img/icon.gif) [Researchmap](https://researchmap.jp/h-hoshino){:target="_blank"}
+* ![*](img/icon.gif) [兵庫県立大学研究者データベース](http://kyoin.u-hyogo.ac.jp/staff//eng/hikaruhoshino/){:target="_blank"}
+* ![*](img/icon.gif) [Google Scholar](https://scholar.google.co.jp/citations?user=y3qOW84AAAAJ&hl=ja){:target="_blank"}
 
 
 ### 略歴
@@ -30,6 +30,8 @@
 
 ### その他
 
-* 扱ったことのあるプログラミング言語:<br> C, Python, MATLAB/Simulink, Mathematica, シェルスクリプト, HTML/CSS
+扱ったことのあるプログラミング言語:
+<br> C, Python, MATLAB/Simulink, Mathematica, シェルスクリプト, HTML/CSS
 
-* [経県値](https://uub.jp/kkn/km_new.cgi?MAP=43444043444543404404344445453440442444045443404&NAM=hoshi&CAT=%E7%94%9F%E6%B6%AF%E7%B5%8C%E7%9C%8C%E5%80%A4) (160点)  [リンク](https://uub.jp/kkn/)
+
+[経県値](https://uub.jp/kkn/km_new.cgi?MAP=43444043444543404404344445453440442444045443404&NAM=hoshi&CAT=%E7%94%9F%E6%B6%AF%E7%B5%8C%E7%9C%8C%E5%80%A4) (160点)  [リンク](https://uub.jp/kkn/)
