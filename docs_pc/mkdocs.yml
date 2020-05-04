@@ -17,7 +17,9 @@ nav:
     - LaTeX|文書作成:
       - index: tex.md
       - BibTeXによる文献リスト: tex_bibtex.md
-    - Python|パイソン:
+    - Inkscape|画像作成:
+      - index: inkscape.md
+    - Python|数値計算:
       - index: python.md
       - グラフ作成: python_graph.md
 
@@ -77,8 +79,6 @@ google_analytics: ['UA-143840570-1', 'http://www.eng.u-hyogo.ac.jp']
 # attr_list: idやclassなどを追加可能({:id=xxx}や{:target=_blank}など)
 # ===============================
 markdown_extensions:
-  - toc:
-      permalink: true
   - footnotes
   - def_list
   - pymdownx.arithmatex
