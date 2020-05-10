@@ -4,7 +4,7 @@
 # ===================
 # Basic information
 # ===================
-site_name: '星野 光 (Hikaru HOSHINO) - 兵庫県立大学'
+site_name: '星野 光 (Hikaru HOSHINO)'
 site_author: 'Hikaru Hoshino'
 copyright: Copyright &copy; 2020 Hikaru Hoshino
 site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/ja/
@@ -13,12 +13,12 @@ site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/ja/
 # Navigation Tree
 # =======================
 nav:
-    - ホーム|Home: index.md
-    - 自己紹介|CV: cv.md
-    - 研究テーマ|Research: research.md
-    - 研究成果リスト|Publications: publications.md
-    - 教育活動|Education: education.md
-    - 研究室配属|Message: laboratory.md
+    - ホーム | Home: index.md
+    - 自己紹介 | CV: cv.md
+    - 研究テーマ | Research: research.md
+    - 研究成果リスト | Publications: publications.md
+    - 教育活動 | Education: education.md
+    - 研究室配属 | Message: laboratory.md
 
 # =============================
 # Other Settings (custom styleによる追加情報)
