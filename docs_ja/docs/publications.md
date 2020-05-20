@@ -60,7 +60,9 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 共同研究者登壇分を含む．**太字**が発表者. 
 
-* **H. Hoshino**, T. J. Koo, Y. C. Chu, Y. Susuki, A hierarchical controller design for two-site electricity and steam supply system participating in power system frequency regulation, 第64回システム制御情報学会研究発表講演会 (予定). 
+* **星野 光**, 太陽光発電および蓄電池システムへのスクリーニングカーブ法の適用, 電気学会電力エネルギー部門大会 (予定)
+
+* **H. Hoshino**, T. J. Koo, Y. C. Chu, Y. Susuki, A hierarchical controller design for two-site electricity and steam supply system participating in power system frequency regulation, 第64回システム制御情報学会研究発表講演会, GS08-3, 神戸市産業振興センター(オンライン開催), 2020年5月20日. 
 
 * 星野 光, **阪上 公紀**, 古谷 栄光, 送配電事業におけるデススパイラルの発生条件に関する一検討, 令和2年電気学会全国大会, 6-120, 東京電機大学東京千住キャンパス, 2020年3月13日. 
 
