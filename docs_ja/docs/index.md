@@ -27,6 +27,15 @@
 
 <div markdown="1" id="news">
 
+
+2020/07/20
+: the 42nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC2020) で発表しました. カナダ開催予定でしたがオンライン開催に変更となり発表は事前収録でした. 
+
+---
+2020/06/24
+: 東京女子大学の「エネルギー産業と国民生活」(電気事業連合会寄付講座)にて「再生可能エネルギーの現状と課題」についてオンライン講演をしました. 
+
+---
 2020/05/20
 : 第64回システム制御情報学会研究発表講演会(SCI’20)で口頭発表しました.
 

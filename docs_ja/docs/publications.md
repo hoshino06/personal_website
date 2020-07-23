@@ -42,7 +42,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 ### 国際会議録(Conference)
 
-* H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami, Physiological modeling of concentration-effect relationship for nondepolarzing neuromuscular blocking drugs, 2020 42nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) in conjunction with the 43rd Annual Conference of the Canadian Medical and Biological Engineering Society (accepted). 
+* H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami, Physiological modeling of concentration-effect relationship for nondepolarizing neuromuscular blocking drugs, the 42nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC2020), pp. 5202-5207, via the EMBS Virtual Academy, July 20-24 (2020).  
 
 * Y. Susuki, T. Saito, H. Hoshino, T. Hikihara, Synthesis and real-time simulation of reactive controller for hot-water supply in a safety-critical hospital environment, Proceedings of the 2017 IEEE Conference on Control Technology and Applications (CCTA2017), pp.211- 216, Mauna Lani, HI, USA, August 27-30 (2017). [[IEEE](https://doi.org/10.1109/CCTA.2017.8062465)]
 
@@ -60,7 +60,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 共同研究者登壇分を含む．**太字**が発表者. 
 
-* **星野 光**, 太陽光発電および蓄電池システムへのスクリーニングカーブ法の適用, 電気学会電力エネルギー部門大会 (予定)
+* **星野 光**, 太陽光発電および蓄電池システムの経済性評価へのスクリーニングカーブ法の適用, 電気学会電力エネルギー部門大会 (予定)
 
 * **H. Hoshino**, T. J. Koo, Y. C. Chu, Y. Susuki, A hierarchical controller design for two-site electricity and steam supply system participating in power system frequency regulation, 第64回システム制御情報学会研究発表講演会, GS08-3, 神戸市産業振興センター(オンライン開催), 2020年5月20日. 
 
