@@ -14,6 +14,8 @@ site_url: http://www.eng.u-hyogo.ac.jp/faculty/hoshino/pc/
 # =======================
 nav:
     - Home|ホーム: index.md
+    - Linux|計算機利用:
+      - index: linux.md
     - LaTeX|文書作成:
       - index: tex.md
       - BibTeXによる文献リスト: tex_bibtex.md

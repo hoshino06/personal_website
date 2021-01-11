@@ -7,6 +7,8 @@
 
 ### 論文誌(Journal)
 
+* 星野光, 太陽光発電および蓄電池が需要家にもたらす経済メリットのスクリーニングカーブ法に基づく検討, 電気学会論文誌B, Vol. 141, No. 3 (採択)
+
 * H. Hoshino, Y. Susuki, T. J. Koo, and T. Hikihara,
 Structural analysis and control of a model of two-site electricity and heat supply,
 Journal of Dynamic Systems, Measurement, and Control, 141(10), 101004 (2019).
@@ -42,7 +44,7 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 ### 国際会議録(Conference)
 
-* H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami, Physiological modeling of concentration-effect relationship for nondepolarizing neuromuscular blocking drugs, the 42nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC2020), pp. 5202-5207, via the EMBS Virtual Academy, July 20-24 (2020).  
+* H. Hoshino, E. Furutani, T. Sugawara, T. Takeda, Y. Sawanobori, G. Shirakami, Physiological modeling of concentration-effect relationship for nondepolarizing neuromuscular blocking drugs, the 42nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC2020), pp. 5202-5207, via the EMBS Virtual Academy, July 20-24 (2020). [[IEEE](https://ieeexplore.ieee.org/abstract/document/9175229)] 
 
 * Y. Susuki, T. Saito, H. Hoshino, T. Hikihara, Synthesis and real-time simulation of reactive controller for hot-water supply in a safety-critical hospital environment, Proceedings of the 2017 IEEE Conference on Control Technology and Applications (CCTA2017), pp.211- 216, Mauna Lani, HI, USA, August 27-30 (2017). [[IEEE](https://doi.org/10.1109/CCTA.2017.8062465)]
 
@@ -60,7 +62,11 @@ Journal of Computational and Nonlinear Dynamics 11(6), 061018 (2016).
 
 共同研究者登壇分を含む．**太字**が発表者. 
 
-* **星野 光**, 太陽光発電および蓄電池システムの経済性評価へのスクリーニングカーブ法の適用, 電気学会電力エネルギー部門大会 (予定)
+* **入江 陽介**, 星野 光, 古谷 栄光, スクリーニングカーブ法に基づく需要家側の経済分析: 太陽光発電および蓄電池の最大導入量に関する検討, 令和３年電気学会全国大会, オンライン開催, 2020年3月(予定). 
+
+* **H. Hoshino**, T. J. Koo, Y. C. Chu, Y. Susuki, A model predictive control formulation for tracking control of energy flows in two-site electricity and steam supply system, 第63回自動制御連合講演会, 1H2-7, オンライン開催, 2020年11月21日. 
+
+* **星野 光**, 太陽光発電および蓄電池システムの経済性評価へのスクリーニングカーブ法の適用, 令和2年電力エネルギー部門大会, 13, オンライン開催, 2020年9月10日. 
 
 * **H. Hoshino**, T. J. Koo, Y. C. Chu, Y. Susuki, A hierarchical controller design for two-site electricity and steam supply system participating in power system frequency regulation, 第64回システム制御情報学会研究発表講演会, GS08-3, 神戸市産業振興センター(オンライン開催), 2020年5月20日. 
 

@@ -8,3 +8,9 @@
     border: 1px dashed #CCCCCC;
 }
 
+#right_figure {
+    width: 140px;
+    float: right;
+    margin: 0 0px 0px 20px;
+    
+}
